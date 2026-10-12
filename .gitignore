@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Otomasyonun çalışma alanı: dizin repoda sabit dursun, içeriği commit edilmesin
+.temp/*
+!.temp/.gitkeep
+
+
+# RF-DETR model ağırlıkları (~485 MB) repoya girmez.
+# PML-1.0 lisanslıdırlar ve Roboflow Platform Anlaşması olmadan yeniden dağıtılamazlar.
+.roboflow/models/*.pth
+
+# .env yalnızca RF_HOME içerdiği (sırrı bilgi yok) için versionlanır
+!.env

@@ -1,0 +1,11 @@
+# Python 3.10+ gerektirir.
+# Aşağıdakiler doğrudan bağımlılıklardır; torch/torchvision, numpy, supervision vb.
+# bunların alt bağımlılığı olarak otomatik kurulur.
+#
+# NVIDIA GPU ile çalıştırılacaksa PyTorch'un CUDA sürümü bu dosyadan ÖNCE kurulmalıdır.
+# Sürüm/indirme adresi https://pytorch.org/get-started/locally/ üzerinden alınır:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/<cuda-surumu>
+
+rfdetr-plus>=1.1.0,<2.0
+rfdetr>=1.8.0,<2.0
+pillow>=10.0
